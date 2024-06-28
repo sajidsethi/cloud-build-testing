@@ -1,8 +1,7 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  script: |
+  script: 
      docker build -t us-west2-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quick-image:tag1 .
   automationsubstitutions:true
 images:
 - 'us-west2-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1'
- 
